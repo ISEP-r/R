@@ -3,9 +3,13 @@
 
 data <- read.csv("productivity.csv")
 str(data)
+#2
 colSums(is.na(data))
+#3
 withoutNa=na.omit(data)
+#4
 summary(data$actual_productivity)
+#5
 cor(actual_productivity,team)
 cor(actual_productivity,targeted_productivity)
 cor(actual_productivity,smv)
